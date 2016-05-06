@@ -1,0 +1,33 @@
+{
+  "name": "is-url-protocol-without-slashes",
+  "version": "0.0.0",
+  "description": "Checks for the presence of URL protocol without a slashes",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "engines" : {
+    "node" : ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arttse/node.is-url-protocol-without-slashes.git"
+  },
+  "keywords": [
+    "is",
+    "url",
+    "protocol",
+    "without",
+    "slashes"
+  ],
+  "author": "Nikita «Arttse» Bystrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arttse/node.is-url-protocol-without-slashes/issues"
+  },
+  "homepage": "https://github.com/Arttse/node.is-url-protocol-without-slashes#readme",
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
