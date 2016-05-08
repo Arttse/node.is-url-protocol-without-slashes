@@ -1,7 +1,7 @@
 {
   "name": "is-url-protocol-without-slashes",
   "version": "1.0.0",
-  "description": "Checks for the presence of URL protocol without a slashes",
+  "description": "Checks for the presence of URL protocol without a slashes (colon-slash-slash)",
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"
@@ -20,8 +20,11 @@
     "protocol",
     "without",
     "slashes",
+    "colon",
     "slash",
-    "check"
+    "requires",
+    "check",
+    "presence"
   ],
   "author": "Nikita «Arttse» Bystrov",
   "license": "MIT",

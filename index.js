@@ -5,10 +5,10 @@ const url = require ( 'url' );
 
 
 /**
- * Checks for the presence of URL protocol without a slashes
+ * Checks for the presence of URL protocol without a slashes (colon-slash-slash)
  *
- * @param str - URL to check
- * @returns {boolean}
+ * @param {String} str - URL to check
+ * @returns {Boolean}
  */
 module.exports = str => {
 
