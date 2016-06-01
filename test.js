@@ -35,11 +35,31 @@ test ( 'check url protocol with slashes', t => {
 
   t.false ( m ( 'site.com' ) );
   t.false ( m ( 'http://admin:pass@site.com' ) );
+  t.false ( m ( 'http://admin:pass@site.com:3000' ) );
+  t.false ( m ( 'http://admin:pass@site.com:3000/a' ) );
+  t.false ( m ( 'http://admin:pass@site.com:3000/a/b/./c' ) );
+  t.false ( m ( 'http://admin:pass@site.com:3000/a/b/../c' ) );
+  t.false ( m ( 'http://admin:pass@site.com:3000/a/b/../c/d.js' ) );
   t.false ( m ( '//site.com' ) );
+  t.false ( m ( '//site.com:3000' ) );
+  t.false ( m ( '//site.com:3000/a' ) );
+  t.false ( m ( '//site.com:3000/a/b/./c' ) );
+  t.false ( m ( '//site.com:3000/a/b/../c' ) );
+  t.false ( m ( '//site.com:3000/a/b/../c/d.js' ) );
   t.false ( m ( '//admin:pass@site.com' ) );
+  t.false ( m ( '//admin:pass@site.com:3000' ) );
+  t.false ( m ( '//admin:pass@site.com:3000/a' ) );
+  t.false ( m ( '//admin:pass@site.com:3000/a/b/./c' ) );
+  t.false ( m ( '//admin:pass@site.com:3000/a/b/../c' ) );
+  t.false ( m ( '//admin:pass@site.com:3000/a/b/../c/d.js' ) );
 
   t.false ( m ( 'ftp://user:password@host:port/path' ) );
   t.false ( m ( 'http://test.com' ) );
+  t.false ( m ( 'http://test.com:1234' ) );
+  t.false ( m ( 'http://test.com:1234/a' ) );
+  t.false ( m ( 'http://test.com:1234/a/b/./c' ) );
+  t.false ( m ( 'http://test.com:1234/a/b/../c' ) );
+  t.false ( m ( 'http://test.com:1234/a/b/../c/d.js' ) );
   t.false ( m ( 'rtmp://mycompany.com/vod/mp4:mycoolvideo.mov' ) );
   t.false ( m ( 'sftp://root@test.com/home/test/' ) );
   t.false ( m ( 'rtsp://ip_address/MediaInput/h264' ) );
