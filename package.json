@@ -6,9 +6,6 @@
   "scripts": {
     "test": "xo && ava"
   },
-  "engines": {
-    "node": ">=4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arttse/node.is-url-protocol-without-slashes.git"
@@ -37,7 +34,7 @@
     "xo": "*"
   },
   "xo": {
-    "esnext": true,
+    "esnext": false,
     "rules": {
       "no-multi-spaces": [
         "error",

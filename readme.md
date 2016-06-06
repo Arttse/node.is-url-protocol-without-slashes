@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install -S is-url-protocol-without-slashes
+$ npm i -S is-url-protocol-without-slashes
 ```
 
 
 ## Usage
 
 ```js
-const isUrlProtocolWithoutSlashes = require('is-url-protocol-without-slashes');
+var isUrlProtocolWithoutSlashes = require('is-url-protocol-without-slashes');
 
 isUrlProtocolWithoutSlashes('mailto:info@mail.com');
 //=> true

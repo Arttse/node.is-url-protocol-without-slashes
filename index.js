@@ -1,7 +1,7 @@
 'use strict';
 
 /** Modules */
-const url = require ( 'url' );
+var url = require ( 'url' );
 
 
 /**
@@ -10,15 +10,15 @@ const url = require ( 'url' );
  * @param {String} str - URL to check
  * @returns {Boolean}
  */
-module.exports = str => {
+module.exports = function ( str ) {
 
   if ( typeof str !== 'string' ) {
 
-    throw new TypeError ( `Expected a string, not ${typeof str}` );
+    throw new TypeError ( 'Expected a string, not ' + typeof str );
 
   }
 
-  const urlObj = url.parse ( str );
+  var urlObj = url.parse ( str );
 
   return Boolean ( urlObj.protocol ) && Boolean ( urlObj.slashes ) === false;
 
