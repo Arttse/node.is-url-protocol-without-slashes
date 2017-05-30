@@ -30,16 +30,12 @@
   },
   "homepage": "https://github.com/Arttse/node.is-url-protocol-without-slashes#readme",
   "devDependencies": {
-    "ava": "^0.19.1",
-    "xo": "^0.18.2"
+    "ava": "^0.16.0",
+    "xo": "^0.16.0"
   },
   "xo": {
     "esnext": false,
     "rules": {
-      "func-call-spacing": [
-        "error",
-        "always"
-      ],
       "no-multi-spaces": [
         "error",
         {
