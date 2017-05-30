@@ -30,18 +30,20 @@
   },
   "homepage": "https://github.com/Arttse/node.is-url-protocol-without-slashes#readme",
   "devDependencies": {
-    "ava": "*",
-    "xo": "*"
+    "ava": "^0.19.1",
+    "xo": "^0.18.2"
   },
   "xo": {
     "esnext": false,
     "rules": {
+      "func-call-spacing": [
+        "error",
+        "always"
+      ],
       "no-multi-spaces": [
         "error",
         {
           "exceptions": {
-            "ImportDeclaration": true,
-            "VariableDeclarator": true,
             "Property": true
           }
         }
@@ -58,10 +60,7 @@
           "maxEOF": 1
         }
       ],
-      "padded-blocks": [
-        "error",
-        "always"
-      ],
+      "padded-blocks": 0,
       "indent": [
         "error",
         2
@@ -73,6 +72,9 @@
           "afterColon": true,
           "align": "colon"
         }
+      ],
+      "no-extra-parens": [
+        "warn"
       ]
     }
   }
