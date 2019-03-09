@@ -1,6 +1,6 @@
 {
   "name": "is-url-protocol-without-slashes",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Checks for the presence of URL protocol without a slashes (colon-slash-slash)",
   "main": "index.js",
   "types": "index.d.ts",
