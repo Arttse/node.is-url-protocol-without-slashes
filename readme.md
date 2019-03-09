@@ -31,5 +31,4 @@ isUrlProtocolWithoutSlashes('tg://addstickers?set=example');
 
 
 ## License
-
-MIT © Nikita «Arttse» Bystrov
+[MIT](LICENSE) &copy; 2016-2019 Nikita Bystrov (Arttse)
