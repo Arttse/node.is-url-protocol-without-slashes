@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Checks for the presence of URL protocol without a slashes (colon-slash-slash)",
   "main": "index.js",
+  "sideEffects": false,
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
