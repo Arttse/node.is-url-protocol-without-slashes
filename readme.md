@@ -1,5 +1,4 @@
 # is-url-protocol-without-slashes
-[![Build Status](https://travis-ci.org/Arttse/node.is-url-protocol-without-slashes.svg?branch=master)](https://travis-ci.org/Arttse/node.is-url-protocol-without-slashes)
 [![Coverage Status](https://coveralls.io/repos/github/Arttse/node.is-url-protocol-without-slashes/badge.svg?branch=master)](https://coveralls.io/github/Arttse/node.is-url-protocol-without-slashes?branch=master)
 
 > Node.js module. Checks for the presence of URL protocol without a slashes (colon-slash-slash)
