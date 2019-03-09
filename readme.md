@@ -3,18 +3,23 @@
 
 > Node.js module. Checks for the presence of URL protocol without a slashes (colon-slash-slash)
 
+Version 2 requires Node.js >= 6.13.
 
 ## Install
 
-```
-$ npm i -S is-url-protocol-without-slashes
+```sh
+# NPM
+$ npm install is-url-protocol-without-slashes
+
+# Yarn
+$ yarn add is-url-protocol-without-slashes
 ```
 
 
 ## Usage
 
 ```js
-var isUrlProtocolWithoutSlashes = require('is-url-protocol-without-slashes');
+const isUrlProtocolWithoutSlashes = require('is-url-protocol-without-slashes');
 
 isUrlProtocolWithoutSlashes('mailto:info@mail.com');
 //=> true
