@@ -1,10 +1,18 @@
 import test from 'ava'
 import m from './'
 
-test('expected a string', t => {
-  t.throws(() => m(), 'Expected a string, not undefined')
-  t.throws(() => m([]), 'Expected a string, not object')
-  t.throws(() => m({}), 'Expected a string, not object')
+test('other types must return false', t => {
+  t.false(m())
+  t.false(m(''))
+  t.false(m(undefined))
+  t.false(m(123))
+  t.false(m(true))
+  t.false(m(false))
+  t.false(m(() => {}))
+  t.false(m([]))
+  t.false(m({}))
+  t.false(m(null))
+  t.false(m(Symbol('')))
 })
 
 test('check url protocol without slashes', t => {
@@ -18,6 +26,8 @@ test('check url protocol without slashes', t => {
   t.true(m('skype:login?chat'))
   t.true(m('smsto:8881234567?body=hello!'))
   t.true(m('bitcoin:19UBzu6Bt4bsx7eTb7eryFWKJ7TF8Bwtnf'))
+  t.true(m('virtual:some/foo//bar'))
+  t.true(m('virtual:duplicate-virtual://foo-bar.com'))
 })
 
 test('check url protocol with slashes', t => {
@@ -28,6 +38,8 @@ test('check url protocol with slashes', t => {
   t.false(m('http://admin:pass@site.com:3000/a/b/./c'))
   t.false(m('http://admin:pass@site.com:3000/a/b/../c'))
   t.false(m('http://admin:pass@site.com:3000/a/b/../c/d.js'))
+  t.false(m('http://admin:pass@site.com/foo//bar'))
+  t.false(m('http://admin:pass@site.com/foo/http://test.com'))
   t.false(m('//site.com'))
   t.false(m('//site.com:3000'))
   t.false(m('//site.com:3000/a'))
