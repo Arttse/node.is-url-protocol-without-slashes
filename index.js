@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-var url = require ( 'url' );
+var url = require('url')
 
-module.exports = function ( str ) {
-  if ( typeof str !== 'string' ) {
-    throw new TypeError ( 'Expected a string, not ' + typeof str );
+module.exports = function (str) {
+  if (typeof str !== 'string') {
+    throw new TypeError('Expected a string, not ' + typeof str)
   }
 
-  var urlObj = url.parse ( str );
+  var urlObj = url.parse(str)
 
-  return Boolean ( urlObj.protocol ) && Boolean ( urlObj.slashes ) === false;
-};
+  return Boolean(urlObj.protocol) && Boolean(urlObj.slashes) === false
+}
