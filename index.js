@@ -1,13 +1,17 @@
 'use strict'
 
-var url = require('url')
+const { URL } = require('url')
 
-module.exports = function (str) {
-  if (typeof str !== 'string') {
-    throw new TypeError('Expected a string, not ' + typeof str)
+module.exports = str => {
+  if (typeof str !== 'string' || !str) {
+    return false
   }
 
-  var urlObj = url.parse(str)
+  try {
+    const { href, protocol } = new URL(str)
 
-  return Boolean(urlObj.protocol) && Boolean(urlObj.slashes) === false
+    return href.indexOf(`${protocol}//`) !== 0
+  } catch (e) {
+    return false
+  }
 }
