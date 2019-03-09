@@ -1,6 +1,6 @@
 # is-url-protocol-without-slashes
-[![install size](https://packagephobia.now.sh/badge?p=is-url-protocol-without-slashes@2.0.0)](https://packagephobia.now.sh/result?p=is-url-protocol-without-slashes@2.0.0)
-[![Coverage Status](https://coveralls.io/repos/github/Arttse/node.is-url-protocol-without-slashes/badge.svg?branch=v2.0.0)](https://coveralls.io/github/Arttse/node.is-url-protocol-without-slashes?branch=v2.0.0)
+[![install size](https://packagephobia.now.sh/badge?p=is-url-protocol-without-slashes)](https://packagephobia.now.sh/result?p=is-url-protocol-without-slashes)
+[![Coverage Status](https://coveralls.io/repos/github/Arttse/node.is-url-protocol-without-slashes/badge.svg?branch=master)](https://coveralls.io/github/Arttse/node.is-url-protocol-without-slashes?branch=master)
 
 > Node.js module. Checks for the presence of URL protocol without a slashes (colon-slash-slash)
 
