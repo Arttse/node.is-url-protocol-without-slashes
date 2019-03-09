@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/Arttse/node.is-url-protocol-without-slashes#readme",
   "devDependencies": {
-    "ava": "^0.16.0"
+    "ava": "^1.3.1"
   }
 }
