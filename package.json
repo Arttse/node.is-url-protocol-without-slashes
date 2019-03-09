@@ -29,7 +29,7 @@
     "check",
     "presence"
   ],
-  "author": "Nikita «Arttse» Bystrov",
+  "author": "Nikita Bystrov (Arttse)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Arttse/node.is-url-protocol-without-slashes/issues"
